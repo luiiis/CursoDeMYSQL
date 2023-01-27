@@ -8,4 +8,13 @@ cuatro tipos de mapeo
 -munchos a uno
 -munchos a munchos
 */
-create database escuela;
+/*base de datos que tenemos*/
+show databases;
+/*seleccionar base de datos*/
+use mysql;
+/*mostrar tablas de la base de datos*/
+show full tables;
+/*mostrar registros de una tabla*/
+select*from user;
+/*previlegios para el usuario root*/
+show grants for 'root'@'localhost';
