@@ -18,3 +18,14 @@ show full tables;
 select*from user;
 /*previlegios para el usuario root*/
 show grants for 'root'@'localhost';
+/*
+-------------------------------------------------------------------------------------
+crear usuarios y eliminarlos
+-------------------------------------------------------------------------------------*/
+/*crear usuario sin previlegios*/
+create user juanito identified by 'Hola';
+/*eliminar usuario*/
+DROP USER juanito;
+
+select*from user;
+
