@@ -29,3 +29,22 @@ DROP USER juanito;
 
 select*from user;
 
+/*
+-------------------------------------------------------------------------------------
+OTORGAR PREVILEGIOS A LOS USUARIOS
+-------------------------------------------------------------------------------------*/
+ALL PRIVILEGES: como mencionamos previamente esto permite a un usuario de MYSQL accesder a todas las bases de
+datos asignadas en el sistema.
+CREATE: perimite crear nuevas tablas o base de datos.
+DROP: permite eliminar tablas o base de datos;
+DELETE: permite eliminar registros de tablas;
+INSERT: permite insertar registros en tablas;
+SELECT: permite leer registros en las tablas;
+UPDATE: permite actualizar registros seleccionados en tablas.
+GRANT OPTION: permite remove privilegios de usuarios;
+
+
+
+
+
+
