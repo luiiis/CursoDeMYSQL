@@ -42,4 +42,9 @@ Operador logico AND OR  con mysql
 select*from t_prueba where fecha='2018-01-06' or fecha ='2014-06-22';
 -- se tiene que cumplir la condicion 
 select*from t_prueba where fecha='2018-01-06' and fecha ='2014-06-23';
-
+/*
+----------------------------------------------------------------------------------------------------------
+Operador diferente  con mysql
+----------------------------------------------------------------------------------------------------------
+*/
+select*from t_prueba where nombre <>'juan';
