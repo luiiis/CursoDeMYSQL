@@ -99,5 +99,13 @@ ADD CONSTRAINT fk_idpersonaDomicilio
   REFERENCES t_persona (id_persona)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
-  
+  /*
+-------------------------------------------------------------------------------------------------------
+INNER JOIN EN MYSQL
+-------------------------------------------------------------------------------------------------------
+*/
+select tp.id_persona,tp.nombre,td.pais from t_persona as tp
+ inner join t_domicilio as td 
+ on tp.id_persona =td.id_persona;
+
   
