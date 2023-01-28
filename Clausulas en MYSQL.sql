@@ -33,5 +33,13 @@ select*from t_prueba where nombre like 'l%';
 select*from t_prueba where nombre like '%u';
 select*from t_prueba where nombre like '%u%';
 
-
+/*
+----------------------------------------------------------------------------------------------------------
+Operador logico AND OR  con mysql
+----------------------------------------------------------------------------------------------------------
+*/
+-- con que se cumpla una de las dos
+select*from t_prueba where fecha='2018-01-06' or fecha ='2014-06-22';
+-- se tiene que cumplir la condicion 
+select*from t_prueba where fecha='2018-01-06' and fecha ='2014-06-23';
 
