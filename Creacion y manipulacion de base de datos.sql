@@ -70,3 +70,34 @@ USO DE ALIAS EN MYSQL
 -------------------------------------------------------------------------------------------------------
 */
 select t1.nombre  from prueba1.t_prueba as t1;
+/*
+-------------------------------------------------------------------------------------------------------
+LLAVES FORANEAS EN MYSQL
+-------------------------------------------------------------------------------------------------------
+*/
+CREATE TABLE t_domicilio(
+id_domicilio int(11) NOT NULL AUTO_INCREMENT,
+id_persona int(11) NOT NULL,
+pais VARCHAR(45) DEFAULT NULL,
+cp VARCHAR(45) DEFAULT NULL,
+PRIMARY KEY(id_domicilio)
+) ENGINE=InnoDB default charset=utf8;
+
+CREATE TABLE t_persona(
+id_persona int(11) NOT NULL AUTO_INCREMENT,
+paterno VARCHAR(45) DEFAULT NULL,
+materno VARCHAR(45) DEFAULT NULL,
+nombre VARCHAR(45) DEFAULT NULL,
+PRIMARY KEY(id_persona)
+) ENGINE=InnoDB AUTO_INCREMENT=3 default charset=utf8;
+
+/*consulta para agregar un fk con comandos */
+ALTER TABLE t_domicilio ADD INDEX fk_idpersonaDomicilio (id_persona) ;
+ALTER TABLE t_domicilio
+ADD CONSTRAINT fk_idpersonaDomicilio
+  FOREIGN KEY (id_persona)
+  REFERENCES t_persona (id_persona)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+  
