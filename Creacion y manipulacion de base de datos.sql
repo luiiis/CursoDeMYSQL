@@ -52,3 +52,9 @@ ACTUALIZAR REGISTROS EN LAS TABLAS
 -------------------------------------------------------------------------------------------------------
 */
 update t_prueba set comentarios ='actualizacion de coemntario',fecha='2022-01-01' where id_prueba=1;
+/*
+-------------------------------------------------------------------------------------------------------
+ELIMINAR REGISTROS EN LAS TABLAS
+-------------------------------------------------------------------------------------------------------
+*/
+delete from t_prueba where id_prueba=3;
