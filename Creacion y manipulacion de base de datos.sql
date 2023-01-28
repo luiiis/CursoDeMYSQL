@@ -43,6 +43,12 @@ INSERTAR REGISTROS EN LAS TABLAS
 */
 use prueba1;
 insert into t_prueba (nombre,peso,comentarios,fecha)
-values('Pepito',55.5,'es un tipo super grosero','2018-03-11');
+values('lulu',55.5,'es un tipo super grosero','2018-03-11');
 
 describe t_prueba;
+/*
+-------------------------------------------------------------------------------------------------------
+ACTUALIZAR REGISTROS EN LAS TABLAS
+-------------------------------------------------------------------------------------------------------
+*/
+update t_prueba set comentarios ='actualizacion de coemntario',fecha='2022-01-01' where id_prueba=1;
