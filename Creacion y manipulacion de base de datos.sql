@@ -36,3 +36,13 @@ primary key(id_prueba)
 describe t_prueba;
 -- mostrar todas las tablas de mi base de datos
 show tables;
+/*
+-------------------------------------------------------------------------------------------------------
+INSERTAR REGISTROS EN LAS TABLAS
+-------------------------------------------------------------------------------------------------------
+*/
+use prueba1;
+insert into t_prueba (nombre,peso,comentarios,fecha)
+values('Pepito',55.5,'es un tipo super grosero','2018-03-11');
+
+describe t_prueba;
