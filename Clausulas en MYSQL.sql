@@ -48,3 +48,14 @@ Operador diferente  con mysql
 ----------------------------------------------------------------------------------------------------------
 */
 select*from t_prueba where nombre <>'juan';
+/*
+----------------------------------------------------------------------------------------------------------
+clausula Order by y Group by  con mysql
+----------------------------------------------------------------------------------------------------------
+-- order by  - esta clausula ordena numericamente, alfabeticamente o por fechas
+--group by  -ordena por grupo de datos iguales
+*/
+select* from t_prueba  order by nombre desc;
+select* from t_prueba  order by peso asc;
+
+select*from t_prueba group by comentarios desc;
